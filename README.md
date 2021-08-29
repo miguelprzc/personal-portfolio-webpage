@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://miguelprzc.github.io/personal-portfolio-wepage/">
+    <a href="https://miguelprzc.github.io/personal-portfolio-webpage/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/miguelprzc/personal-portfolio-wepage/blob/main/index.html">
+    <a href="https://github.com/miguelprzc/personal-portfolio-webpage/blob/main/index.html">
       HTML CODE
     </a>
     <span> | </span>
-    <a href="https://github.com/miguelprzc/personal-portfolio-wepage/blob/main/styles.css">
+    <a href="https://github.com/miguelprzc/personal-portfolio-webpage/blob/main/styles.css">
       CSS CODE
     </a>
   </h3>
