@@ -65,10 +65,10 @@ body {
 }
 
 .navbar a:hover {
-  color: rgb(146, 23, 15);
+  color: var(--secondary-color);
   font-size: 18px;
   padding:  0 0 5px 0;
-  border-bottom: solid rgb(146, 23, 15) 2px;
+  border-bottom: solid var(--secondary-color);
 }
 
 .navbar .contact-btn a:hover {
@@ -81,10 +81,8 @@ body {
   background-color: white;
 }
 
-
-
-main {
-  /* padding: 2%; */
+.navbar .contact-btn:hover  a {
+  color: var(--primary-color);
 }
 
 .welcome-section {
@@ -118,17 +116,26 @@ main {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 10%;
+  justify-content: center;
+  padding: 60px 8%;
   line-height: 1.5rem
 }
 
+.about-section h2 {
+  font-size: 1.8rem;
+}
+
+.about-section p {
+  margin-top: 50px;
+}
+
 .projects {
-  background-color: var(--primary-color);
+  background-color: rgb(138, 139, 139);
   text-align: center;
   margin: 20px auto;
   padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .projects h2 {
@@ -162,7 +169,7 @@ main {
 
 .project-tile h3 {
   height: 50px;
-  background-color: #FFF;
+  background-color: var(--primary-color);
   border-radius: 0 0 10px 10px;
   display: flex;
   align-items: center;
@@ -170,7 +177,10 @@ main {
 }
 
 .project-tile a {
-  color:var(--primary-color);
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  color: #FFF;
   text-decoration: none;
   transition: 0.4s ease;
 } 
@@ -181,28 +191,40 @@ main {
   transition: 0.4s ease;
 } 
 
-
-
 .contact {
-  background-color: rgb(138, 139, 139);
-  height: 100vh;
+  background-color: #FFF;
+  height: 50vh;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 5% 2%
+}
+
+.contact h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-top: 60px;
+}
+
+.contact p {
+  margin-top: 20px;
 }
 
 .social-container {
-  margin: 40px;
+  margin: auto;
+  margin-top: 40px;
+  padding-left: auto;
+  padding-right: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
 }
 
 .social-btn {
-  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+  width: 180px;
   height: 50px;
   border-radius: 10px;
   background-color: black;
-  padding: 0 2%;
 }
 
 .social-btn i {
@@ -210,16 +232,36 @@ main {
 }
 
 .social-btn a {
+  justify-self: center;
+  display: block;
+  width: inherit;
+  line-height: 49px;
   text-decoration: none;
   color: #FFF;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  transition: 1s ease-in-out;
+}
+
+.social-btn:hover {
+  background-color: #FFF;
+}
+
+.social-btn:hover a {
+  color: var(--primary-color);
+  font-size: 1.25em;
 }
 
 
 
 /* -------- MEDIA QUERIES ------- */
 
-@media (min-width: 480px) {
+@media (max-width: 768px) {
+
+  .social-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 0 60px;
+  }
 
 }
 
